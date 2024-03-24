@@ -1,2 +1,2 @@
 # Dice-Roller-Tool
-Dice Roller
+Dice Roller App
