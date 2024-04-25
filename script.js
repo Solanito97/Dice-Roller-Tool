@@ -1,9 +1,7 @@
 const rollButtonElement = document.querySelector(".roll-button");
-
+const resetButtonElement = document.querySelector(".reset-button");
 const diceElement = document.querySelector(".dice-container");
-
-const rollHistoryElement = document.querySelector(".history-list")
-
+const rollHistoryElement = document.querySelector(".history-list");
 let count = 1;
 
 rollButtonElement.addEventListener("click", () => {
@@ -13,6 +11,11 @@ rollButtonElement.addEventListener("click", () => {
         rollDiceFunction();
     }, 1000);
 })
+
+resetButtonElement.addEventListener("click", () => {
+    count = 1;
+    rollHistoryElement.innerHTML = "";
+});
 
 function rollDiceFunction() {
     const rollResult = Math.ceil(Math.random() * 6);

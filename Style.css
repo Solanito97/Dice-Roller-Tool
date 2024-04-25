@@ -97,3 +97,19 @@
         .history-item span {
             font-size: 30px;
         }
+
+        .reset-button {
+            padding: 8px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        .reset-button {
+            transform: scale(0.95);
+        }
